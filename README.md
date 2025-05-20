@@ -10,6 +10,8 @@ The samples consist of whole liver tissue from three standard diet (SD, control)
 #### Bash script
 This script contains the full bash pipeline used for processing raw RNA-Seq data. It begins with genome indexing using STAR (v2.7.11b) with the Mus musculus GRCm39 genome and corresponding GTF annotation from Ensembl. STAR is then used to align paired-end FASTQ reads, generating sorted, strand-specific BAM files. After alignment, BAM files were indexed and quality-checked using Samtools. Transcript abundance was then quantified using StringTie (v2.1.3b) in two stages: first, assembling transcripts per sample and second, quantifying expression using the reference annotation. Output files include per-sample GTFs and expression tables in TSV format. These were subsequently used for the generation of a gene-level count matrix via the prepDE.py script, which served as input for downstream differential expression analyses in R.
 
+This bash script was ran on a Linux remote server from Centro Informático Científico de Andalucía). 
+
 #### R script
 This analysis was performed in R and covers the entire transcriptomic pipeline from raw TPM quantification to differential expression and enrichment. The workflow integrates tools for preprocessing, normalization, multivariate modeling, and functional interpretation of RNA-Seq data from murine liver samples.
 
