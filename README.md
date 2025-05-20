@@ -30,3 +30,8 @@ This analysis was performed in R and covers the entire transcriptomic pipeline f
 *7. Multivariate Modeling (sPLS-DA)*: to identify the most discriminatory genes, an sPLS-DA model was trained with mixOmics. Top contributing genes were extracted from components 1 and 2 and visualized in ranked barplots.
 
 Cytoscape, together with ClueGO, was used to generate gene enrichment networks based on the differentially expressed genes (DEGs) identified.
+
+## Contact
+ImmunoNutrition & ImmunoMetabolism research group, INIM, CTS1074 from University of Seville, School of Medicine.
+
+José Luis del Río, joseluisdelriovazquez@gmail.com
